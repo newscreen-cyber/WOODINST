@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woodinist | Architectural Woodwork Certification</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                        url('https://images.unsplash.com/photo-1600585154340-be6161a56a26?ixlib=rb-4.0.3&auto=format&fit=crop&q=85') center/cover no-repeat;
+        }
+        .card-hover {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .card-hover:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Header -->
+    <header class="bg-stone-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-4">
+                <img src="https://i.postimg.cc/vZDWp94r/woodwork.jpg" alt="Woodinist Logo" class="h-16 w-auto rounded">
+                <div>
+                    <h1 class="text-3xl heading-font tracking-tight">Woodinist</h1>
+                    <p class="text-xs text-amber-400 tracking-widest">ARCHITECTURAL WOODWORK CERTIFICATION</p>
+                </div>
+            </a>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="hover:text-amber-400 transition-colors">Home</a>
+                <a href="services.html" class="hover:text-amber-400 transition-colors">Services</a>
+            </nav>
+            
+            <a href="https://wa.me/1234567890" target="_blank" 
+               class="bg-emerald-600 hover:bg-emerald-700 px-5 py-2.5 rounded-full text-sm font-medium flex items-center gap-2 transition-colors">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero h-screen flex items-center text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-6xl md:text-7xl heading-font font-bold mb-6 leading-tight">
+                Certified Excellence<br>in Architectural Woodwork
+            </h2>
+            <p class="text-xl md:text-2xl mb-10 text-stone-200">
+                Independent verification, inspection, and assurance for premium millwork projects.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="services.html" 
+                   class="bg-white text-stone-900 px-10 py-4 rounded-xl font-semibold text-lg hover:bg-amber-400 hover:text-stone-900 transition-all">
+                    Explore Our Services
+                </a>
+                <a href="#contact" 
+                   class="border border-white px-10 py-4 rounded-xl font-semibold text-lg hover:bg-white/10 transition-all">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-5xl heading-font font-bold mb-8">Assurance Through Certification</h2>
+                <div class="space-y-6 text-lg">
+                    <p>
+                        Woodinist is a trusted authority in architectural woodwork certification, 
+                        inspection, and compliance. We partner with architects, contractors, and manufacturers 
+                        to deliver independent verification that meets the highest industry standards.
+                    </p>
+                    <p>
+                        From specification review to final inspection, our rigorous process reduces risk, 
+                        ensures quality, and provides the confidence your projects deserve.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-stone-100 rounded-3xl overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&q=85" 
+                     alt="Architectural Woodwork" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Offerings -->
+    <section class="bg-stone-900 text-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl heading-font font-bold text-center mb-12">Our Core Offerings</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div onclick="window.location='services.html'" 
+                     class="card-hover bg-stone-800 p-8 rounded-3xl cursor-pointer group">
+                    <div class="text-amber-400 text-4xl mb-6">📋</div>
+                    <h3 class="text-2xl font-semibold mb-3">Certification Programs</h3>
+                    <p class="text-stone-400">Independent verification of materials, fabrication, and installation.</p>
+                    <span class="text-xs uppercase tracking-widest text-amber-400 mt-6 block group-hover:underline">Learn more →</span>
+                </div>
+
+                <div class="card-hover bg-stone-800 p-8 rounded-3xl cursor-pointer">
+                    <div class="text-amber-400 text-4xl mb-6">🔍</div>
+                    <h3 class="text-2xl font-semibold mb-3">Fee Schedules</h3>
+                    <p class="text-stone-400">Transparent, project-based pricing for certification and inspection services.</p>
+                </div>
+
+                <div class="card-hover bg-stone-800 p-8 rounded-3xl cursor-pointer">
+                    <div class="text-amber-400 text-4xl mb-6">🎓</div>
+                    <h3 class="text-2xl font-semibold mb-3">AIA Seminars</h3>
+                    <p class="text-stone-400">Continuing education for architects on woodwork standards and best practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl heading-font font-bold text-center mb-4">Start a Conversation</h2>
+            <p class="text-center text-stone-600 mb-12">Tell us about your project. We’ll respond within 24 hours.</p>
+            
+            <form action="mailto:service@woodinist.com" method="POST" enctype="text/plain" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <input type="text" name="Name" placeholder="Full Name" required
+                           class="w-full px-6 py-4 rounded-2xl border border-stone-300 focus:border-amber-400 focus:outline-none">
+                    <input type="email" name="Email" placeholder="Email Address" required
+                           class="w-full px-6 py-4 rounded-2xl border border-stone-300 focus:border-amber-400 focus:outline-none">
+                </div>
+                <textarea name="Message" rows="6" placeholder="Project details, timeline, or questions..." required
+                          class="w-full px-6 py-4 rounded-3xl border border-stone-300 focus:border-amber-400 focus:outline-none"></textarea>
+                
+                <button type="submit" 
+                        class="w-full bg-stone-900 hover:bg-black text-white font-semibold py-5 rounded-3xl text-lg transition-all">
+                    Send Inquiry
+                </button>
+            </form>
+
+            <div class="mt-12 text-center">
+                <p class="font-medium">1435 River Park Drive, Suite 520<br>Sacramento, CA 95815</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-stone-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-sm">&copy; 2026 Woodinist. All rights reserved.</p>
+            <p class="text-xs mt-2">Independent Certification • Inspection • Compliance Assurance</p>
+        </div>
+    </footer>
+
+</body>
+</html>
